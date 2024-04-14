@@ -5,20 +5,24 @@ We have +12V, GND and a analog input which is driven by 0-10V. At least this I c
 Here's the pinout  
 ![](socket.jpg)
 
-Here's the bill of materials I used
-- Wemos D1 mini
+# Bill of materials
+## Wemos D1 mini  
 ![](wemos-d1.jpg)  
-- Buck converter 12Vdc -> 5Vdc
+## Buck converter 12Vdc -> 5Vdc  
 ![](buck-converter-front.jpg) ![](buck-converter-back.jpg) 
-- PWM converter 0-10Vdc
+## PWM converter 0-10Vdc
 ![](pwm-converter-front.jpg) ![](pwm-converter-back.jpg) 
-- Wieland plug
+## Wieland plug
 ![](plug-front.jpg) ![](plug-back.jpg) 
 
+# Wiring
 The basic wiring should be obvious and the PWM input of the PWM converter should be soldered to D1 of the Wemos D1.
 
+# Tasmota
 After connecting everything you should upload Tasmota to the Wemos D1 and set it up accordingly.
 
 ![](tasmota1.jpg) ![](tasmota2.jpg)  
 
-Now this is ready to be integrated into the smart home of your choice. Do not use a propriatery smart home if you value freedom of knowledge.
+Now this is ready to be integrated into the smart home of your choice. 
+
+**Do not use a propriatery smart home if you value freedom of knowledge.**
