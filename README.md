@@ -15,6 +15,9 @@ Here's the pinout
 ## Wieland plug
 ![](plug-front.jpg) ![](plug-back.jpg) 
 
+# Case
+![](case.jpg)
+
 # Wiring
 The basic wiring should be obvious and the PWM input of the PWM converter should be soldered to D1 of the Wemos D1.
 
@@ -24,5 +27,6 @@ After connecting everything you should upload Tasmota to the Wemos D1 and set it
 ![](tasmota1.jpg) ![](tasmota2.jpg)  
 
 Now this is ready to be integrated into the smart home of your choice. 
+
 
 **Do not use a propriatery smart home if you value freedom of knowledge.**
