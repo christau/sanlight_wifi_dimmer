@@ -30,3 +30,45 @@ Now this is ready to be integrated into the smart home of your choice.
 
 
 **Do not use a propriatery smart home if you value freedom of knowledge.**
+
+# Update
+Since I moved from FHEM to homeassistant I flashed the ESPHome firmware to my device.
+Here's the esphome config file for this
+```
+esphome:
+  name: sanlight-dimmer
+  friendly_name: sanlight dimmer
+substitutions:
+  reboot_timeout: 1h
+  update_interval: 10min
+
+esp8266:
+  board: esp01_1m
+  restore_from_flash: true
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+
+ota:
+  platform: esphome
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+captive_portal:
+  
+output:
+  - platform: esp8266_pwm
+    pin: GPIO5
+    id: pwm_output
+
+light:
+  - platform: monochromatic
+    output: pwm_output
+    name: "Light-1"
+    restore_mode: RESTORE_AND_ON
+```
