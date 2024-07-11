@@ -34,7 +34,7 @@ Now this is ready to be integrated into the smart home of your choice.
 # Update
 Since I moved from FHEM to homeassistant I flashed the ESPHome firmware to my device.
 Here's the esphome config file for this
-```
+```yaml
 esphome:
   name: sanlight-dimmer
   friendly_name: sanlight dimmer
